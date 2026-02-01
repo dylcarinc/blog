@@ -3,6 +3,7 @@
   {%- assign hyperpage = site.pages | where: "path", path | first -%}
   {%- if hyperpage.title %}
   <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
+  <a class="CSCI 340" href="https://hendrix-cs.github.io/csci340/">{{ "CSCI 340" | escape }}</a>
   {%- endif -%}
   {%- endfor %}
 </div>
